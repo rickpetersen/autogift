@@ -1,0 +1,16 @@
+<hr class="clear" />
+<div class="fnf-target row">
+    <div class="col-xs-3">{{target['name']}} ({{target['relationship']}})</div> 
+    <div class="data-about-target small col-xs-3">{{target['DoB']}}</div>
+    <div class="data-about-target small col-xs-3">
+        <ul class="list-unstyled">
+            {% for interest in target['Interests'] %}
+            <li> {{interest['name']}}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="small col-xs-3">
+        <a class="btn btn-primary" href="#" role="button">Edit</a>
+    </div>   
+</div>
