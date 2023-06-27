@@ -159,8 +159,8 @@ def call_downstream_api():
     return render_template('display.html', result=api_result)
 
 
-# if __name__ == "__main__":
-#     app.run()
-
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run()
+
+# if __name__ == "__main__":
+#     app.run(host='0.0.0.0', debug=True)
